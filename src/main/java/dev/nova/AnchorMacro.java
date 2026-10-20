@@ -64,7 +64,7 @@ public final class AnchorMacro extends Module {
             }
             case EXPLODE -> {
                 if (wait-- > 0) return;
-                if (safeDistance.value > 0 && mc.player.getPos().distanceTo(Vec3d.ofCenter(anchor)) < safeDistance.value) {
+                if (safeDistance.value > 0 && mc.player.getEntityPos().distanceTo(Vec3d.ofCenter(anchor)) < safeDistance.value) {
                     say("Too close - not detonating");
                 } else {
                     select((int) explodeSlot.value - 1);
