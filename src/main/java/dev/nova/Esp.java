@@ -9,7 +9,7 @@ import net.minecraft.util.math.Vec3d;
 /** Draws boxes/tracers on the HUD layer, so they show through walls by nature. */
 public final class Esp extends Module {
     final Setting.Bool players = bool("Players", true), hostile = bool("Hostile", true), passive = bool("Passive", false);
-    final Setting.Bool names = bool("Names", true), boxes = bool("Boxes", true), box3d = bool("3D Box", false), tracers = bool("Tracers", "Visual", true);
+    final Setting.Bool names = bool("Names", true), boxes = bool("Boxes", true),box3d = bool("3D Box", false), tracers = bool("Tracers", true);
     final Setting.Num range = num("Range", 64, 8, 128, true), width = num("Line Width", 2, 1, 4, true);
     final ColorSetting boxColor = color("Box", 0xFF4040), lineColor = color("Line", 0x40FFFF);
 
