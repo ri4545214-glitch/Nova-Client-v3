@@ -45,7 +45,7 @@ public final class Aimbot extends Module {
 
         for (Entity e : mc.world.getEntities()) {
             if (!accepts(e, players, hostile, passive)) continue;
-            Vec3d pos = e.getPos();
+            Vec3d pos = e.getEntityPos();
             Vec3d prev = last.put(e.getId(), pos);
             seen.add(e.getId());
             if (!active) continue;
