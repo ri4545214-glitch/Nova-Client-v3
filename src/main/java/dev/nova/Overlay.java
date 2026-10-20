@@ -3,7 +3,7 @@ package dev.nova;
 import net.minecraft.client.gui.DrawContext;
 
 public final class Overlay extends Module {
-    final Setting.Bool watermark = bool("Watermark", true), list = bool("Module List", true), coords = bool("Coordinates", "Visual", true);
+    final Setting.Bool watermark = bool("Watermark", true), list = bool("Module List", true),coords = bool("Coordinates", true);
     final ColorSetting color = color("Text", 0x80C0FF);
 
     public Overlay() { super("Overlay", "HUD: watermark, module list, coordinates.", "Visual", true); }
